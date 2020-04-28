@@ -1,5 +1,5 @@
 # Sentiment Analysis of Disaster tweets
-# Classifiers: Decision Tree, Random Forest DNU: SVM
+
 # Importing the library
 import pandas as pd
 import numpy as np
