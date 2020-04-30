@@ -53,12 +53,6 @@ from sklearn.ensemble import RandomForestClassifier
 classifier = RandomForestClassifier(n_estimators = 450, criterion = 'entropy',random_state = 0)
 classifier.fit(X_train, y_train)
 
-
-# Create Regression Model and fit to the Dataset
-from sklearn.tree import DecisionTreeClassifier
-classifier = DecisionTreeClassifier(criterion = 'entropy', random_state = 0)
-classifier.fit(X_train, y_train)
-
 # Predicting the test set results
 y_pred = classifier.predict(X_test)
 y_test = pd.read_csv('predicted.csv')
